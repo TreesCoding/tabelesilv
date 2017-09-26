@@ -144,8 +144,6 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
     text-decoration: none;
     background: #14937a;
 	color: #fff;
-
-  
 }
 
 .pricing-table-signup-tiny a:active {
@@ -155,21 +153,14 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
 
 
 .pricing-table-signup-small {
-    margin-top: 25px;
-    padding-bottom: 10px;
+    margin-top:4%;
+	margin-bottom: 4%;
 }
 
 .pricing-table-signup-small a {
     display: inline-block;
-    width:50%;
-    height: 50px;
-    background: #f39c12;
-    line-height: 50px;
-    
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-   
 }
 
 .pricing-table-signup-small a:hover {
