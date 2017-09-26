@@ -9,9 +9,12 @@ body {
 }
 
 
-.icon-word {
-    background-image: url("../icons/doc-icon.png");
-    background-position: center center;
+.icon {
+  display: block;
+  max-width:48px;
+  max-height:48px;
+  width: auto;
+  height: auto;
 }
 
 .container {
@@ -102,8 +105,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2
 
 .pricing-table-header-pro {
     padding: 5px 0 5px 0;
-    background: #2980b9;
-	border-bottom:10px solid #1d6391;
+    background: green;
+	border-bottom:10px solid green;
 }
 
 .pricing-table-header-tiny h2, .pricing-table-header-small h2, .pricing-table-header-medium h2, .pricing-table-header-pro h2 {  font-weight: 700; color:#FFF; }
