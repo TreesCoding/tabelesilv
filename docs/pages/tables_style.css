@@ -7,6 +7,13 @@ body {
 	text-align: center;
     color: #fff;
 }
+
+
+.icon-word {
+    background-image: url("../icons/doc-icon.png");
+    background-position: center center;
+}
+
 .container {
     overflow: hidden;
 	margin:0 auto;
