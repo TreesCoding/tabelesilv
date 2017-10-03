@@ -31,5 +31,9 @@
 "CategoryID" : 8,
 "CategoryName" : "Norma Tehnica 8"
 }
-
+,
+{
+"CategoryID" : 9,
+"CategoryName" : "Norma Tehnica 9"
+}
 ]
