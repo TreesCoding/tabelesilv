@@ -1,31 +1,35 @@
 [
 {
 "CategoryID" : 1,
-"CategoryName" : "Beverage"
+"CategoryName" : "Norma Tehnica 1"
 },
 {
 "CategoryID" : 2,
-"CategoryName" : "Condiment"
+"CategoryName" : "Norma Tehnica 2"
 },
 {
 "CategoryID" : 3,
-"CategoryName" : "Confection"
+"CategoryName" : "Norma Tehnica 3"
 },
 {
 "CategoryID" : 4,
-"CategoryName" : "Beverage"
+"CategoryName" : "Norma Tehnica 4"
 },
 {
 "CategoryID" : 5,
-"CategoryName" : "Dairy"
+"CategoryName" : "Norma Tehnica 5"
 },
 {
 "CategoryID" : 6,
-"CategoryName" : "Grains"
+"CategoryName" : "Norma Tehnica 6"
 },
 {
 "CategoryID" : 7,
-"CategoryName" : "Seafood"
+"CategoryName" : "Norma Tehnica 7"
+},
+{
+"CategoryID" : 8,
+"CategoryName" : "Norma Tehnica 8"
 }
 
 ]
