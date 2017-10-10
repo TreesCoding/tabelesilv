@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <title>Flat Pricing Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+    <link href="tables_style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-app="norme" ng-controller="normeTables">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <h1>Norme tehnice 2</h1>
+        </div>
+       
+        <div  ng-repeat="row in table" class="row-fluid">
+            <div ng-repeat="cell in row" class="span3 tiny">
+                <div class="pricing-table-header-pro ">
+                    <h2>{{cell.tableName}}</h2>
+                </div>
+                <div class="pricing-table-features ">
+                    <p><strong>Unlimited</strong>{{cell.capitol}}</p>
+                    <p><strong>80GB</strong>{{cell.indexPagina}}</p>
+                    <p><strong>Unlimited</strong>{{cell.observatii}}</p>
+                    <p><strong>Unlimited</strong> Domains</p>
+                    <p><strong>Free</strong> Billing Systems</p>
+                </div>
+                <div class="pricing-table-signup-small ">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-success">Download ZIP</button>
+                        <button type="button" class="btn btn-lg btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only"></span>
+                        </button>
+                        <ul class="dropdown-menu icon">
+                            <li><a href="../tables/{{cell.tableName}}.docx" download><img src="icons/doc-icon.png">  MS Word</a></li>
+                            <li><a href="../tables/{{cell.tableName}}.xlsx" download><img src="icons/xls-icon.png">  MS Excel</a></li>
+                            <li><a href="../tables/{{cell.tableName}}.pdf" download><img src="icons/pdf-icon.png">  Adobe PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+    </div>
+  <script>
+      var app = angular.module("norme", []);
+      app.controller("normeTables", function ($scope, $http) {
+          var url = "normatehnica2.json";
+          $http.get(url).success(function (response) {
+              $scope.table = response;
+          });
+      });
+    </script>
+    
+</body>
+</html>
