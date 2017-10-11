@@ -7,10 +7,10 @@
       "observatii": "Coduri specii forestiere -  Anexa 1"
     },
     {
-      "capitol": "test excel",
+      "tableName": "test excel",
+      "capitol": "nume capitol",
       "indexPagina": 200,
-      "observatii": "observatiii tabel",
-      "tableName": "nume tabel"
+      "observatii": "observatiii tabel"
     },
     {
       "tableName": "nume tabel",
