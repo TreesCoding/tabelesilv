@@ -5,51 +5,6 @@
       "capitol": "Specii",
       "indexPagina": 200,
       "observatii": "Coduri specii forestiere -  Anexa 1"
-    },
-    {
-      "tableName": "test excel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    }
-  ],
-  [ 
-
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
     }
   ]
 ]
