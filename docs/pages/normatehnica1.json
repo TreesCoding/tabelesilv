@@ -1,10 +1,10 @@
 [
   [ 
     {
-      "tableName": "test",
-      "capitol": "nume capitol",
+      "tableName": "NT1 Cod specii",
+      "capitol": "Specii",
       "indexPagina": 200,
-      "observatii": "observatiii tabel"
+      "observatii": "Coduri specii forestiere -  Anexa 1"
     },
     {
       "capitol": "nume capitol",
