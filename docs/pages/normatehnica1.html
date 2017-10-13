@@ -17,6 +17,26 @@
 </head>
 
 <body ng-app="norme" ng-controller="normeTables">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Tabele Utile in Silvicultura</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" ng-repeat="item in navbar">
+                    <li><a href="{{item.name}}">{{item.label}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="container-fluid">
      <div class="jumbotron">
     <h3><b>NORME TEHNICE  PRIVIND COMPOZITII, SCHEME SI TEHNOLOGII DE REGNERARE A PADURILOR SI DE IMPADURIRE A TERENURILOR DEGRADATE</b></h3>      
@@ -61,6 +81,11 @@
           $http.get(url).success(function (response) {
               $scope.table = response;
           });
+
+          $http.get("../../navbar.json").success(function (response) {
+              $scope.navbar = response;
+          });
+
       });
     </script>
     
