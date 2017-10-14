@@ -1,79 +1,211 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Flat Pricing Tables</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-    <link href="tables_style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <title>ArtGIS - Tabele Utile in Silvicultura</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- =======================================================
+      Theme Name: Bell
+      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+      Author: BootstrapMade.com
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
 </head>
+
 <body ng-app="norme" ng-controller="normeTables">
+    <!-- Page Content
+    ================================================== -->
+    <!-- Hero -->
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Tabele Utile in Silvicultura</a>
+    <section class="herosecond">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="hero-brand" href="../../index.html" title="Home"><img alt="Bell Logo" src="../img/logo.png"></a>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav" ng-repeat="item in navbar">
-                    <li><a href="{{item.name}}">{{item.label}}</a></li>
+
+            <div class="col-md-12">
+                <h3>
+                    NORME TEHNICE PRIVIND ALEGEREA SI APLICAREA TRATAMENTELOR
+                </h3>
+                <p class="tagline">ORDIN Nr. 1652 din 31.10.2000 </p>
+                <p class="tagline">NORMA TEHNICA <b>3</b></p>
+            </div>
+        </div>
+
+    </section>
+    <!-- /Hero -->
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <a href="../../index.html"><img src="../img/logo-nav.png" alt="" title="" /></img>
+                </a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li ng-repeat="item in navbar"><a href="{{item.name}}">{{item.label}}</a></li>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </nav>
+            <!-- #nav-menu-container -->
 
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h3><b>NORME TEHNICE PRIVIND ALEGEREA SI APLICAREA TRATAMENTELOR</b></h3>
-            <p>O.M Nr. 1650 din 31.10.2000</p>
-            <h2>NORMA TEHNICA <span class="blue">3</span></h2>
+            <nav class="nav social-nav pull-right hidden-sm-down">
+                <a href="#"><i class="fa fa-facebook"></i></a></i>
+                </a>
+            </nav>
         </div>
+    </header>
+    <!-- #header -->
 
-        <div ng-repeat="row in table" class="row-fluid">
-            <div ng-repeat="cell in row" class="span3 tiny">
-                <div class="pricing-table-header-pro ">
-                    <h2>{{cell.tableName}}</h2>
-                </div>
-                <div class="pricing-table-features ">
-                    <p><strong>Capitol: </strong>{{cell.capitol}}</p>
-                    <p><strong>Index\Pagina: </strong>{{cell.indexPagina}}</p>
-                    <p><strong>Observatii: </strong>{{cell.observatii}}</p>
-                </div>
-                <div class="pricing-table-signup-small ">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-success">Download ZIP</button>
-                        <button type="button" class="btn btn-lg btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only"></span>
-                        </button>
-                        <ul class="dropdown-menu icon">
-                            <li><a href="../tables/{{cell.tableName}}.docx" download><img src="icons/doc-icon.png">  MS Word</a></li>
-                            <li><a href="../tables/{{cell.tableName}}.xlsx" download><img src="icons/xls-icon.png">  MS Excel</a></li>
-                            <li><a href="../tables/{{cell.tableName}}.pdf" download><img src="icons/pdf-icon.png">  Adobe PDF</a></li>
-                        </ul>
+    <!-- About -->
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="text-center">
+                Formulare existente
+            </h2>
+            <div class="card-columns" ng-repeat="table in tables">
+
+                <!-- Card 1 -->
+                <div class="card" style="border-style: solid;display: inline-block">
+                    <div class="card-header">{{table.tableName}}</div>
+                    <div class="card-body">
+                        <p><strong>Capitol: </strong>{{table.capitol}}</p>
+                        <p><strong>Index\Pagina: </strong>{{table.indexPagina}}</p>
+                        <p><strong>Observatii: </strong>{{table.observatii}}</p>
+                        <div class="btn-group" role="group">
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Download
+                                    </button>
+                                    <ul class="dropdown-menu icon" aria-labelledby="btnGroupDrop1">
+                                        <li>
+                                            <a href="../tables/{{table.tableName}}.docx" download><img src="icons/doc-icon.png"> MS Word</a>
+                                        </li>
+                                        <li>
+                                            <a href="../tables/{{table.tableName}}.xlsx" download><img src="icons/xls-icon.png"> MS Excel</a>
+                                        </li>
+                                        <li>
+                                            <a href="../tables/{{table.tableName}}.pdf" download><img src="icons/pdf-icon.png"> Adobe PDF</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+    </section>
+    <!-- /About -->
+    <!-- Parallax -->
 
+    <section class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 text-lg-left text-center">
+                    <h2 style="color:#E04F00;">
+                        Proiect finantat de <b> ArtGIS Company</b>
+                    </h2>
+
+                    <p>
+                        ArtGIS este o companie care activeaza in domeniul forestier, cadastrului si al protectiei mediului</br>
+                        Oferim servicii complete pentru realizare proiecte GIS, software la comanda, IT Management
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+                    <a class="btn btn-ghost" href="http://www.artgis.ro">Viziteaza ArtGis</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- /Call to Action -->
+    <!-- Portfolio -->
+
+    <footer class="site-footer">
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+                        <p class="copyright-text">
+                            © Trees Coding
+                        </p>
+                        <div class="credits">
+                            <a href="http://www.artgis.ro">Proiect realizat de </a> ArtGIS Company
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+    <!-- JavaScript
+
+
+    <!-- Required JavaScript Libraries -->
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/superfish/hoverIntent.js"></script>
+    <script src="../lib/superfish/superfish.min.js"></script>
+    <script src="../lib/tether/js/tether.min.js"></script>
+    <script src="../lib/stellar/stellar.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/easing/easing.js"></script>
+    <script src="../lib/stickyjs/sticky.js"></script>
+    <script src="../lib/parallax/parallax.js"></script>
+    <script src="../lib/lockfixed/lockfixed.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- Template Specisifc Custom Javascript File -->
+    <script src="../js/custom.js"></script>
+    <!--
+    <script src="contactform/contactform.js"></script>
+    -->
     <script>
         var app = angular.module("norme", []);
         app.controller("normeTables", function ($scope, $http) {
             var url = "normatehnica3.json";
             $http.get(url).success(function (response) {
-                $scope.table = response;
+                $scope.tables = response;
             });
 
             $http.get("../../navbar.json").success(function (response) {
@@ -82,6 +214,6 @@
 
         });
     </script>
-
 </body>
+
 </html>

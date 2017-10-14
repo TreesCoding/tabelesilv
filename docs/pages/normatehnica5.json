@@ -1,5 +1,4 @@
 [
-  [ 
     {
       "tableName": "NT5 Coduri SUP",
       "capitol": "Anexa 2",
@@ -23,33 +22,30 @@
       "capitol": "nume capitol",
       "indexPagina": 200,
       "observatii": "observatiii tabel"
+    },
+    {
+      "tableName": "nume tabel",
+      "capitol": "nume capitol",
+      "indexPagina": 200,
+      "observatii": "observatiii tabel"
+    },
+    {
+      "tableName": "nume tabel",
+      "capitol": "nume capitol",
+      "indexPagina": 200,
+      "observatii": "observatiii tabel"
+    },
+    {
+      "tableName": "nume tabel",
+      "capitol": "nume capitol",
+      "indexPagina": 200,
+      "observatii": "observatiii tabel"
+    },
+    {
+      "tableName": "nume tabel",
+      "capitol": "nume capitol",
+      "indexPagina": 200,
+      "observatii": "observatiii tabel"
     }
-  ],
-  [ 
 
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    }
-  ]
 ]
