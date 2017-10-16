@@ -36,12 +36,7 @@
 
     <!-- Main Stylesheet File -->
     <link href="../css/style.css" rel="stylesheet">
-    <!-- =======================================================
-      Theme Name: Bell
-      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+   
 </head>
 
 <body ng-app="norme" ng-controller="normeTables">
@@ -101,21 +96,14 @@
             <h2 class="text-center">
                 Formulare existente
             </h2>
-            <div class="card-columns" ng-repeat="table in tables">
-
-                <!-- Card 1 -->
-                <div class="card" style="border-style: solid;display: inline-block">
-                    <div class="card-header">{{table.tableName}}</div>
-                    <div class="card-body">
-                        <p><strong>Capitol: </strong>{{table.capitol}}</p>
-                        <p><strong>Index\Pagina: </strong>{{table.indexPagina}}</p>
-                        <p><strong>Observatii: </strong>{{table.observatii}}</p>
-                        <div class="btn-group" role="group">
+            <table class="table table-sm">
+                <tbody>
+                    <tr ng-class="{'table-success':$even}"  ng-repeat="table in tables"  >
+                        <td><strong>{{table.tableName}}</strong></td>
+                       <td style="text-align: center">
                             <div class="btn-group" role="group">
                                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Download
-                                    </button>
+                                    aria-expanded="false">Download</button>
                                     <ul class="dropdown-menu icon" aria-labelledby="btnGroupDrop1">
                                         <li>
                                             <a href="../tables/{{table.tableName}}.docx" download><img src="icons/doc-icon.png"> MS Word</a>
@@ -128,10 +116,11 @@
                                         </li>
                                     </ul>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
     </section>
     <!-- /About -->
     <!-- Parallax -->
