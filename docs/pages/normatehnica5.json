@@ -1,51 +1,14 @@
 [
+   {
+      "tableName": "NT5 Categ functionale",
+      "capitol": "Anexa 1",
+      "indexPagina": 141,
+      "observatii": "Incadrarea vegetatiei forestiere in grupe, subgrupe si categorii functionale"
+    },
     {
       "tableName": "NT5 Coduri SUP",
       "capitol": "Anexa 2",
       "indexPagina": 146,
-      "observatii": "Codurile unitatilor de gospodarire"
-    },
-    {
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel",
-      "tableName": "nume tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
-    },
-    {
-      "tableName": "nume tabel",
-      "capitol": "nume capitol",
-      "indexPagina": 200,
-      "observatii": "observatiii tabel"
+      "observatii": "Tipuri de unitati de gospodarire"
     }
-
 ]
