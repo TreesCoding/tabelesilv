@@ -1,10 +1,10 @@
 [
- {"name":"normatehnica1.html", "label":"Norma Tehnica 1"},
- {"name":"normatehnica2.html", "label":"Norma Tehnica 2"},
- {"name":"normatehnica3.html", "label":"Norma Tehnica 3"},
- {"name":"normatehnica4.html", "label":"Norma Tehnica 4"},
- {"name":"normatehnica5.html", "label":"Norma Tehnica 5"},
- {"name":"normatehnica6.html", "label":"Norma Tehnica 6"},
- {"name":"normatehnica7.html", "label":"Norma Tehnica 7"},
- {"name":"normatehnica8.html", "label":"Norma Tehnica 8"}
+ {"name":"#1", "label":"Norma Tehnica 1"},
+ {"name":"#2", "label":"Norma Tehnica 2"},
+ {"name":"#3", "label":"Norma Tehnica 3"},
+ {"name":"#4", "label":"Norma Tehnica 4"},
+ {"name":"#5", "label":"Norma Tehnica 5"},
+ {"name":"#6", "label":"Norma Tehnica 6"},
+ {"name":"#7", "label":"Norma Tehnica 7"},
+ {"name":"#8", "label":"Norma Tehnica 8"}
 ]

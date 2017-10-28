@@ -1,377 +1,107 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>ArtGIS - Tabele Utile in Silvicultura</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-    
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+<html lang="en" ng-app="norme">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
-    
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
-    
-<script type="application/javascript">
-    
-    function goToPage(page){
-        window.location.href = "pages/" + page + ".html";
+<head>
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+ <script src="app.js"></script>
+
+  <script type="application/javascript">
+    function goToPage(page) {
+      window.location.href =  page ;
     }
-    
-</script>
-  </head>
 
-  <body ng-app="norme" ng-controller="normeTables">
-    <!-- Page Content
-    ================================================== -->
-    <!-- Hero -->
+  </script>
+</head>
 
-    <section class="hero">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="img/logo.png"></a>
-          </div>
-        </div>
+<body ng-controller="normaTables">
 
-        <div class="col-md-12">
-          <h1>
-            Tabele Utile in Silvicultura
-          </h1>
-
-          <p class="tagline">
-            "Tabele Utile in Silvicultura" este un repository gratuit si deschis pentru furnizarea formularelor utilizate in Silvicultura
-          </p>
-          <a class="btn btn-full" href="#about">GoTo Norme Tehnice</a>
-        </div>
-      </div>
-      
-    </section>
-    <!-- /Hero -->
-    
   <!-- Header -->
   <header id="header">
     <div class="container">
-    
+
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img></a>
+        <a href="/"><img src="img/logo-nav.png" alt="" title="" /></img>
+        </a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Bell</a></h1>-->
       </div>
-        
+
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="#features">Despre Proiect</a></li>
           <li class="menu-has-children"><a href="">Norme Tehnice Silvice</a>
-            <ul >
-              <li ng-repeat="item in navbar"><a href="pages/{{item.name}}">{{item.label}}</a></li>
+            <ul>
+              <li ng-repeat="nt in navigation"><a href="{{nt.name}}">{{nt.label}}</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
-      
+      </nav>
+      <!-- #nav-menu-container -->
+
       <nav class="nav social-nav pull-right hidden-sm-down">
-        <a href="#"><i class="fa fa-facebook"></i></a></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a></i>
+        </a>
       </nav>
     </div>
-  </header><!-- #header -->
-  
-    <!-- About -->
+  </header>
+  <!-- #header -->
 
-    <section class="about" id="about">
-      <div class="container text-center">
-        <h2>
-          Tabele existente
-        </h2>
+  <div ng-view=""></div>
 
-        <p>
-          Sectiunea de mai jos prezinta gruparea diferitelor formulare/tabele pentru fiecare Norma Tehnica Silvica. </br> Pentru fiecare norma tehnica este afisat numarul formularelor existente.
-        </p>
-
-        <div class="row stats-row">
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica1')">
-              <span class="stats-no" data-toggle="counter-up">2</span> NORMA TEHNICA 1
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica2')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 2
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica3')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 3
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica4')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 4
-            </div>
-          </div>
-        </div>
-		
-		 <div class="row stats-row">
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica5')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 5
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica6')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 6
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica7')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 7
-            </div>
-          </div>
-
-          <div class="stats-col text-center col-md-3 col-sm-6">
-            <div class="circle" onclick="goToPage('normatehnica8')">
-              <span class="stats-no" data-toggle="counter-up">0</span> NORMA TEHNICA 8
-            </div>
-          </div>
-        </div>
-		
-      </div>
-    </section>
-    <!-- /About -->
-    <!-- Parallax -->
-
-    <section class="features" id="features">
-      <div class="container">
-        <h2 class="text-center">
-          Despre ©Trees Coding
-        </h2>
-        <div class="row">
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block text-center">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-database"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Consultanta
-                </h3>
-
-                <p>
-                  Oeferim consultanta pentru implementarea proiectelor precum si pentru proiecte existente cu dependete software si IT 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block text-center">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-cutlery"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Software
-                </h3>
-
-                <p>
-                  Realizam proiecte GIS si aplicatii software la cerere pentru Silvicultura, Cadastru si Protectia Mediului. 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block text-center">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-dashboard"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  IT Management
-                </h3>
-
-                <p>
-                  IT Management pentru proiectele informatice in Silvicultura, Cadastru si Protectia Mediului, precum si in domenii conexe.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Features -->
-    <!-- Call to Action -->
-
-    <section class="cta">
+  <footer class="site-footer">
+    <div class="bottom">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 col-sm-12 text-lg-left text-center">
-            <h2 style="color:#E04F00;">
-              Proiect finantat de <b> ArtGIS Company</b>
-            </h2>
 
-            <p>
-              ArtGIS este o companie care activeaza in domeniul forestier, cadastrului si al protectiei mediului</br>
-			  Oferim servicii complete pentru realizare proiecte GIS, software la comanda, IT Management
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © Trees Coding
             </p>
-          </div>
-
-          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn btn-ghost" href="http://www.artgis.ro">Viziteaza ArtGis</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Call to Action -->
-    <!-- Portfolio -->
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="section-title">Contact</h2>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-3 offset-lg-2">
-            <div class="info">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>Timisoara<br>Timis,Romania</p>
-              </div>
-              
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>treescoding@gmail.com</p>
-              </div>
-              
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>-</p>
-              </div>
-              
-            </div>
-          </div>
-          
-          <div class="col-lg-5">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nume" data-rule="minlen:4" data-msg="Completati cu minim 4 caractere" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Adresa Email" data-rule="email" data-msg="Completati cu o adresa de mail valida" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subiect" data-rule="minlen:4" data-msg="Completati cu un nume sugestiv subiectul adresat" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Completati mesajul pentru noi" placeholder="Mesaj"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-      
-    <footer class="site-footer">
-      <div class="bottom">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-              <p class="copyright-text">
-                © Trees Coding
-              </p>
-              <div class="credits">
-                <a href="http://www.artgis.ro">Proiect realizat de </a> ArtGIS Company
-              </div>
+            <div class="credits">
+              <a href="http://www.artgis.ro">Proiect realizat de </a> ArtGIS Company
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> <!-- JavaScript
-
-
-    <!-- Required JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/tether/js/tether.min.js"></script>
-    <script src="lib/stellar/stellar.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/easing/easing.js"></script>
-    <script src="lib/stickyjs/sticky.js"></script>
-    <script src="lib/parallax/parallax.js"></script>
-    <script src="lib/lockfixed/lockfixed.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <!-- Template Specisifc Custom Javascript File -->
-    <script src="js/custom.js"></script>
-     <!-- 
-    <script src="contactform/contactform.js"></script>
-     -->
-	 <script>
-            var app = angular.module("norme", []);
-            app.controller("normeTables", function ($scope, $http) {
-              
-                $http.get("navbar.json").success(function (response) {
-                    $scope.navbar = response;
-                });
-
-            });
-        </script>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+  <!-- JavaScript
 
   </body>
 </html>
