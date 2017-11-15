@@ -10,5 +10,35 @@
       "capitol": "Anexa 2",
       "indexPagina": 146,
       "observatii": "Tipuri de unitati de gospodarire"
-    }
+    },
+	{
+      "tableName": "NT5 Cicluri de productie",
+      "capitol": "Anexa 6",
+      "indexPagina": 0,
+      "observatii": "Cicluri pentru padurile din Romania pe performante forestiere, grupe functionale si sortimente-tel"
+    },
+	 {
+      "tableName": "NT5 Indici de recoltare LI",
+      "capitol": "Anexa 7",
+      "indexPagina": 0,
+      "observatii": "INDICI DE RECOLTARE PRIN LUCRARI DE INGRIJIRE-RARIRE"
+    },
+	 {
+      "tableName": "NT5 Periodicitatea LI",
+      "capitol": "Anexa 8",
+      "indexPagina": 0,
+      "observatii": "PERIODICITATEA LUCRARIOR DE INGRIJIRE PENTRU ARBORETELE PARCURSE SISTEMATIC"
+    },
+	 {
+      "tableName": "NT5 Tratamente",
+      "capitol": "Anexa 3",
+      "indexPagina": 0,
+      "observatii": "Coduri tipuri functionale si tratamente"
+    },
+	 {
+      "tableName": "NT5 Varsta exploatabilitatii tehnice",
+      "capitol": "Anexa 4",
+      "indexPagina": 0,
+      "observatii": "VARSTELE EXPLOATABILITATII TEHNICE PENTRU ARBORETELE GOSPODARITEIN CODRU REGULAT CU FUNCTIE (PRIORITARA) DE PRODUCTIE"
+    },
 ]
