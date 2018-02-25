@@ -8,8 +8,14 @@
 	 {
       "tableName": "NT2 Numarul optim de arbori la diverse varste",
       "capitol": "Capitolul 1.5 - Intensitatea lucrarilor de ingrijire",
-      "indexPagina": 8,
+      "indexPagina": 20,
       "observatii": "NT2 Numarul optim de arbori necesar la diverse varste, diferentiat pe principalele formatiuni forestiere - Tabelul 2"
+    },
+	 {
+      "tableName": "NT2 Numar de arbori considerat normal in raport cu desimea initiala si clasa de productie in arborete de molid",
+      "capitol": "Capitolul 3 - ingrijirea si conducerea arboretelor in principalele formatii forestiere",
+      "indexPagina": 45,
+      "observatii": "NT2 Numar de arbori considerat normal in raport cu desimea initiala si clasa de productie in arborete de molid - Tabelul 3"
     }
 ]
 
