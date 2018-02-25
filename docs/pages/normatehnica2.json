@@ -1,9 +1,15 @@
 [
-       {
+    {
       "tableName": "NT2 Sistemul lucrarilor de ingrijire a arboretelor",
       "capitol": "Capitolul 1 - sistemul, scopul si indrumari generale privind ingrijirea si conducerea arboretelor",
       "indexPagina": 8,
       "observatii": "NT2 Sistemul lucrarilor de ingrijire a arboretelor Tabelul 1"
+    },
+	 {
+      "tableName": "NT2 Numarul optim de arbori la diverse varste",
+      "capitol": "Capitolul 1.5 - Intensitatea lucrarilor de ingrijire",
+      "indexPagina": 8,
+      "observatii": "NT2 Numarul optim de arbori necesar la diverse varste, diferentiat pe principalele formatiuni forestiere - Tabelul 2"
     }
 ]
 
