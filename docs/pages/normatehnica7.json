@@ -1,3 +1,26 @@
 [
-   
+   {
+      "tableName": "NT7 Fisa regenerare etapa I",
+      "capitol": "Anexa 5",
+      "indexPagina": 0,
+      "observatii": "Controlul regenerarii etapa 1"
+    },
+    {
+      "tableName": "NT7 Fisa regenerare etapa II",
+      "capitol": "Anexa 5",
+      "indexPagina": 0,
+      "observatii": "Controlul regenerarii etapa 2"
+    },
+	{
+      "tableName": "NT7 Centralizator etapa I",
+      "capitol": "Anexa 5",
+      "indexPagina": 0,
+      "observatii": "Controlul regenerarii etapa 1 - Centralizarea datelor"
+    }
+	{
+      "tableName": "NT7 Centralizator etapa II",
+      "capitol": "Anexa 5",
+      "indexPagina": 0,
+      "observatii": "Controlul regenerarii etapa 2 - Centralizarea datelor"
+    }
 ]
